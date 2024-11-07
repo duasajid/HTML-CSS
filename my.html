@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Platform</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+  
+    <header>
+        <div class="logo">
+            <h1 >MORENT</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search something here...">
+        </div>
+        <div class="nav-icons">
+  
+            <img src="hea.PNG" alt="Favorites" >
+            <img src="notification.PNG" alt="Notifications">
+            <img src="set.PNG" alt="Notifications" style="height: 20px;">
+            <img src="profile.jpeg" alt="Notifications">
+        </div>
+    </header>
+  
+    <section class="hero" style="padding-left: 25px; padding-right: 25px;">
+        <div class="hero-card" style="background-color: skyblue; ">
+            <div class="text-container" >
+                <h2 style="color: white;">The Best Platform for Car Rental</h2>
+                <p style="color: white;">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                <button>Rental Car</button>
+            </div>
+            <img src="first.png" alt="Car 1">
+        </div>
+        <div class="hero-card" style="background-color: #1a73e8;" >
+            <div class="text-container">
+                <h2 style="color: white;">Easy way to rent a car at a low price</h2>
+                <p style="color: white;">Providing cheap car rental services and safe and comfortable facilities.</p>
+                <button style="background-color: rgb(104, 195, 231); ">Rental Car</button>
+            </div>
+            <img src="second.png" alt="Car 2">
+        </div>
+    </section>
+ <section class="search-form"  > 
+
+    <!-- //3rd part 1// -->
+    <div class="pickup-container" style="width: 460px; padding-left: 20px; ">
+        <div class="pickup-header">
+            <input type="radio" id="pickup" name="service" checked>
+            <label for="pickup">Pick-up</label>
+            <!-- <div class="dot"></div> -->
+        </div>
+
+        <div class="pickup-form">
+            <div class="form-group">
+                <label for="location" style="margin-left: 12px;">Locations</label>
+                <select id="location" style="width:140px; " >
+                    <option value="" disabled selected><h6>Select your city</h6></option>
+                    <option value="city1">City 1</option>
+                    <option value="city2">City 2</option>
+                    <option value="city3">City 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date" style="margin-left: 12px;">Date</label>
+                <!-- <input type="date" id="date">  -->
+                 
+                <select id="location" style="width:140px;">
+                    <option value="" disabled selected>Select your date</option>
+                    <option value="10/25/2024">Date</option>
+                    <option value="10/26/1024">Date</option>
+                    <option value="10/27/2024">Date</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time" style="margin-left: 12px;">Time</label>
+                <!-- <input type="time" id="time"> -->
+                <select id="location" style="width:140px;">
+                    <option value="" disabled selected>Select your date</option>
+                    <option value="6:00am">Time</option>
+                    <option value="7:00am">Time</option>
+                    <option value="8:00am">Time</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <button class="switch-btn">Switch</button>
+
+
+    <div class="pickup-container" style="width: 470px; padding-left:20px;" >
+        <div class="pickup-header">
+            <input type="radio" id="pickup" name="service" checked>
+            <label for="pickup" >Drop-off</label>
+            <!-- <div class="dot"></div> -->
+        </div>
+
+        <div class="pickup-form" >
+            <div class="form-group">
+                <label for="location" style="margin-left: 12px;">Locations</label>
+                <select id="location" style="width:140px;">
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="city1">City 1</option>
+                    <option value="city2">City 2</option>
+                    <option value="city3">City 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date" style="margin-left: 12px;">Date</label>
+                <!-- <input type="date" id="date"> -->
+                <select id="location" style="width:140px;">
+                    <option value="" disabled selected>Select your date</option>
+                    <option value="10/25/2024">Date</option>
+                    <option value="10/26/1024">Date</option>
+                    <option value="10/27/2024">Date</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time" style="margin-left: 12px;">Time</label>
+                <!-- <input type="time" id="time"> -->
+                <select id="location" style="width:140px;">
+                    <option value="" disabled selected>Select your date</option>
+                    <option value="6:00am">Time</option>
+                    <option value="7:00am">Time</option>
+                    <option value="8:00am">Time</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- NEWWWWWWWWWWWWWWWWW -->
+ 
+
+<section class="car-section">
+    <!-- <div class="popular-car-container" style="padding-left: 75px; padding-right: 1px;"  > -->
+        <div  >
+            <!-- style="padding-left: 75px;" -->
+         <h4 style="margin-left: 14px; color: #999;" >Popular Car</h4> 
+        <div class="car-grid" >
+            <div class="car-card"style="margin-right:50px; margin-left:10px;">
+                <h4>Koenigsegg</h4>
+                <p>Sport</p>
+                <img src="koen.png" style="margin-bottom: 26px;">
+                <div class="car-info">
+                    <span>80L</span> | <span>Manual</span> | <span>2 People</span>
+                </div>
+                <p class="price">$99.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" style="margin-right:50px;">
+                <h4>Nissan GT-R</h4>
+                <p>Sport</p>
+                <img src="nisa.png"alt="Koenigsegg" style = "height: 105px; margin-bottom: 20px;">
+                <div class="car-info">
+                    <span>80L</span> | <span>Manual</span> | <span>2 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" style="margin-right:50px;">
+                <h4>Rolls-Royce</h4>
+                <p>Sport</p>
+                <img src="3rd.png"alt="Koenigsegg"  style="height: 50px;margin-top: 30px; margin-bottom: 45px;">
+                <div class="car-info"> 
+                    <span>70L</span> | <span>Manual</span> | <span>2 People</span>
+                </div>
+                <p class="price">$96.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" >
+                <h4>Nissan GT-R</h4>
+                <p>Sport</p>
+                <img src="4TH.png" alt="Koenigsegg"  style= "height: 113px; ">
+                <div class="car-info">
+                    <span>80L</span> | <span>Manual</span> | <span>2 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            
+            <!-- Repeat car-card divs for other cars in Popular Car -->
+        </div>
+    </div>
+
+    <!-- <div class="recommendation-car-container"> -->
+       <div >
+        <h4 style="margin-left: 14px; color: #999;" >Recommendation Car</h4>
+        <div class="car-grid">
+            <div class="car-card" style="margin-right:50px; margin-left:10px;">
+                <h4>All New Rush</h4>
+                <p>SUV</p>
+                <img src="5TH.png" alt="All New Rush"  style="height: 100px; width: 160px;" >
+                <div class="car-info">
+                    <span>72L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$72.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" style="margin-right:50px;"  >
+                <h4>CR-V</h4>
+                <p>SUV</p>
+                <img src="7TH.png"alt ="All New Rush"  style="height: 50px; margin-top: 32px ; margin-bottom: 32px;" >
+                <div class="car-info">
+                    <span>70L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" style="margin-right:50px;">
+                <h4>All New Terios</h4>
+                <p>SUV</p>
+                <img src="q.png" alt="All New Rush" style=" width: 170px;height: 80px;  margin-top: 15px ; margin-bottom: 18px;">
+                <div class="car-info">
+                    <span>74L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$74.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card">
+                <h4>CR-V</h4>
+                <p>SUV</p>
+                <img src="w.png" alt="All New Rush" style="height: 50px; margin-top: 32px ; margin-bottom: 32px;" >
+                <div class="car-info">
+                    <span>70L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+
+            <div class="car-card" style="margin-right:50px; margin-left:10px;">
+                <h4>MGZXExclusice</h4>
+                <p>SUV</p>
+                <img src="e.png" alt="All New Rush" style="height: 80px; margin-top: 5px ; margin-bottom: 20px;" >
+                <div class="car-info">
+                    <span>76L</span> | <span>Manual</span> | <span>4 People</span>
+                </div>
+                <p class="price">$76.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+            <div class="car-card" style="margin-right:50px;">
+                <h4>NewMGZS</h4>
+                <p>SUV</p>
+                <img src="t.png" alt="All New Rush" style="height: 100px; margin-top: 5px ; margin-bottom: 5px;">
+                <div class="car-info">
+                    <span>80L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+            <div class="car-card" style="margin-right:50px;">
+                <h4>MGZXExcite</h4>
+                <p>SUV</p>
+                <img src="e.png" alt="All New Rush" style="height: 80px; margin-top: 5px ; margin-bottom: 20px;">
+                <div class="car-info">
+                    <span>74L</span> | <span>Manual</span> | <span>4 People</span>
+                </div>
+                <p class="price">$76.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+            <div class="car-card">
+                <h4>NewMGZS</h4>
+                <p>SUV</p>
+                <img src="l.png" alt="All New Rush"  style="height: 100px; margin-top: 5px ; margin-bottom: 5px;">
+                <div class="car-info">
+                    <span>80L</span> | <span>Manual</span> | <span>6 People</span>
+                </div>
+                <p class="price">$80.00 / day</p>
+                <button class="rent-btn">Rent Now</button>
+            </div>
+            <!-- Repeat car-card divs for other cars in Recommendation Car -->
+             <div style="padding-left: 520px;">
+            <button class="rent-btn" >Show more cars</button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- LASTTTTTTTTTTT -->
+
+<footer class="unique-footer">
+    <div class="footer-container" >
+      <!-- Left Side (Brand Info) -->
+      <div class="footer-brand">
+        <h2 class="footer-brand-title">MORENT</h2>
+        <p class="footer-brand-text">Our vision is to provide convenience and help increase your sales business.</p>
+      </div>
+
+      <!-- Right Side (Links) -->
+      <div class="footer-links" style="padding-left: 450px;">
+        <div class="footer-column">
+          <!-- <h3 class="footer-column-title"  >About</h3> -->
+          <ul class="footer-list">
+            <li><a href="#"><h3>About</h3></a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Featured</a></li>
+            <li><a href="#">Partnership</a></li>
+            <li><a href="#">Business Relation</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <!-- <h3 class="footer-column-title">Community</h3> -->
+          <ul class="footer-list">
+            <li><a href="#"><h3>Community</h3></a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Invite a friend</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-list">
+            <li><a href="#"><h3>Socials</h3></a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p class="footer-copyright"><b>©2022 MORENT. All rights reserved</b></p>
+      <div class="footer-policy">
+        <a href="#"><b>Privacy & Policy</b></a>
+        <a href="#"><b>Terms & Condition</b></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
